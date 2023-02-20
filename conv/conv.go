@@ -21,7 +21,7 @@ func KelvinToCelsius(value float64) float64 {
 }
 
 // Konverterer Kelvin til Fahrenheit
-func KelvinToFarhenheit(value float64) float64 {
+func KelvinToFahrenheit(value float64) float64 {
 	return (value - 273.15) * (9.0/5.0 + 32)
 }
 
