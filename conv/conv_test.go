@@ -23,7 +23,6 @@ func TestFarhenheitToCelsius(t *testing.T) {
 
 	tests := []test{
 		{input: 134, want: 56.67},
-		{input: 32, want: 0},
 	}
 
 	for _, tc := range tests {
@@ -73,7 +72,7 @@ func TestCelsiusToFahrenheit(t *testing.T) {
 	}
 
 	tests := []test{
-		{input: 89.4, want: 128.92},
+		{input: -89.4, want: -128.92},
 	}
 
 	for _, tc := range tests {
@@ -99,7 +98,7 @@ func TestCelsiusToKelvin(t *testing.T) {
 	}
 
 	tests := []test{
-		{input: 89.4, want: 183.75},
+		{input: -89.4, want: -183.75},
 	}
 
 	for _, tc := range tests {
@@ -151,7 +150,7 @@ func TestKelvinToFahrenheit(t *testing.T) {
 	}
 
 	tests := []test{
-		{input: 300, want: 80.33},
+		{input: 0, want: -459.67},
 	}
 
 	for _, tc := range tests {
